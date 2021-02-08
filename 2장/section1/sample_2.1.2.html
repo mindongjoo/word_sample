@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>웹 사이트 메뉴 예제</title>
+<link href="reset.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+body {
+	font-family:"맑은 고딕", "Malgun Gothic", "돋움", Dotum, AppleGothic, sans-serif;
+	font-size:inherit;
+	padding:10px;
+}
+a:link { text-decoration:none; color:#000 } 
+header {
+	height:132px;
+}
+header h1 {
+	float:left;
+	width:auto;
+	font-size:24px;
+}
+
+nav {
+	float:right;
+	width:auto;	
+	margin:0;
+	padding:10px 0 ; /*padding:10px 0 0 0을  수정 */
+	font-size:0.85em;
+	border:1px solid #999; /* 전체 테두리 설정 */
+	box-shadow:0 2px 5px rgba(102,102,102,0.5); /* 메뉴 그림자 효과 적용 */
+}
+
+nav ul {
+	list-style:none;
+}
+nav ul li {
+	display:inline;
+	margin:0;
+	padding:0 20px;
+	text-align:center;
+	border-right:1px solid #CCC; /* 메뉴 왼쪽에만 border 적용 */
+}
+nav ul li:last-child {
+	border-right:none; /* 마지막 메뉴 부분에는 border-right를 none으로 적용 */
+}
+
+
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1> 사이트 제목 </h1>
+	<nav>
+    	<ul>
+        	<li><a href="#">Menu 1</a></li>
+            <li><a href="#">Menu 2</a></li>
+            <li><a href="#">Menu 3</a></li>
+            <li><a href="#">Menu 4</a></li>
+            <li><a href="#">Menu 5</a></li>            
+        </ul>
+    </nav>
+
+</header>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>샘플 페이지</title>
+<style type="text/css">
+body {font-family: "돋움";font-size: 0.8em;color: #333;line-height:1.2em;}
+#form1 { margin:10px 0; padding:10px 0; border-bottom:1px solid #999}
+#form1 label, #form2 label { width:60px; float:left; margin:3px; padding-top:5px; height:15px }
+#form1 input { border:solid 1px;margin:3px; height:20px}
+#form2 input { margin:3px; height:20px}
+#form1 input:enabled {background:#FF9}
+#form1 input:disabled {background: #CCC}
+#form2 input:checked { background:#F90}
+</style>
+</head>
+
+<body>
+<h1>CSS3 속성 테스트용</h1>
+<div id="form1">
+    <label>이름:</label><input type="text" ><br>
+    <label>이메일:</label><input type="text" ><br>
+    <label>주민번호:</label> <input type="text" disabled ><br>
+</div>
+<div id="form2">
+  <label>연령대:</label><input name="" type="radio"  checked> 10대 <input name="" type="radio" > 20대  <input name="" type="radio" > 30대 <br>
+ <label>답변여부:</label> <input name="" type="checkbox"  checked> MMS로  <input name="" type="checkbox"> 이메일로  
+</div>
+</body>
+</html>
+  

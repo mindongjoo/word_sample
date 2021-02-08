@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>웹 사이트 메뉴 예제 </title>
+<link href="reset.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+
+body {
+	font-family:"맑은 고딕", "Malgun Gothic", "돋움", Dotum, AppleGothic, sans-serif;
+	font-size:inherit;
+	padding:10px;
+}
+a:link {text-decoration:none;color:#333;}
+a:hover {color:#F60;}
+.clear { clear:both}
+header {
+	background-image: url(menu_back.jpg);
+	background-repeat: no-repeat;
+	background-position: center left;
+	height:132px;
+}
+header h1 {
+	float:left;
+	width:auto;
+	padding:20px;
+	font-size:24px;
+}
+
+nav {
+	/*float:right;*/
+	float:left;
+	width:100%;	
+	margin:20px 0 0 0;
+	padding:8px 0 ;
+	font-size:0.85em;
+	border-top:1px solid #fff;
+	background: rgba(255,255,255,0.7);
+	
+}
+
+nav ul {
+	list-style:none;
+}
+nav ul li {
+	float:left;
+	margin:0;
+	text-align:center;
+	border-right:1px solid  #999;
+}
+nav ul li:nth-child(4) {
+	border-right:none;
+}
+nav ul li:last-child {
+	float:right;
+	border-right:none;
+}
+
+
+nav ul li a:link {
+	width:50px;
+	display:block;
+	padding:9px 25px;
+	color:#000;
+		
+}
+nav ul li a:hover {
+	color: rgba(255,51,0,1);
+}
+
+
+</style>
+
+
+</head>
+
+<body>
+
+<header>
+<h1> 사이트 제목 </h1>
+	<nav>
+    	<ul>
+        	<li><a href="#">Menu 1</a></li>
+            <li><a href="#">Menu 2</a></li>
+            <li><a href="#">Menu 3</a></li>
+            <li><a href="#">Menu 4</a></li>
+            <li><a href="#">Menu 5</a></li>            
+        </ul>
+    </nav>
+</header>
+
+</body>
+</html>

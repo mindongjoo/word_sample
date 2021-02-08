@@ -1,0 +1,10 @@
+* { margin: 0; padding: 0; } /* CSS 박스 모델 reset */
+body {
+	font-family: "맑은 고딕", "Malgun Gothic", "돋움", Dotum, AppleGothic, sans-serif; /* 글꼴을 정의해 줍니다. */
+	font-size: 0.8em; /* 글꼴 크기 조절 */
+	line-height: 1.4em; /* 글 사이 간격조절 */
+	background-color: white; /* 배경 색상 지정  */
+	background-image: url(../images/background.jpg); /* 배경 이미지 지정  */
+	background-repeat: repeat-x; /* 배경 이미지 반복은 X 축으로만   */
+	background-position: top; /* 배경 이미지 위치는 상단에 위치   */
+}

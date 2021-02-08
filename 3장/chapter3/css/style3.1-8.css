@@ -1,0 +1,116 @@
+* { margin: 0; padding: 0; } /* CSS 박스 모델 reset */
+body {
+	font-family: "맑은 고딕", "Malgun Gothic", "돋움", Dotum, AppleGothic, sans-serif; /* 글꼴을 정의해 줍니다. */
+	font-size: 0.8em; /* 글꼴 크기 조절 */
+	line-height: 1.4em; /* 글 사이 간격조절 */
+	background-color: white; /* 배경 색상 지정  */
+	background-image: url(../images/background.jpg); /* 배경 이미지 지정  */
+	background-repeat: repeat-x; /* 배경 이미지 반복은 X 축으로만   */
+	background-position: top; /* 배경 이미지 위치는 상단에 위치   */
+}
+
+
+@font-face {
+    font-family:'Colaborate';	/* 폰트 이름 지정 */
+    src: url('../web-fonts/ColabLig-webfont.eot');
+    src: url('../web-fonts/ColabLig-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../web-fonts/ColabLig-webfont.woff') format('woff'),
+         url('../web-fonts/ColabLig-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+a{ text-decoration:none; color:inherit;}
+a:hover {color:#F60}
+img { border:none}
+.clear { clear:both}
+a:active, a:focus { 
+   outline:  none; 
+   ie-dummy: expression(this.hideFocus=true); 
+} 
+
+#page-wrap { 
+	width: 913px;  /* 사이트 전체 크기를 설정해 줍니다. */
+	margin: 20px auto; 
+	/* 상단과 하단 마진은 20픽셀 그리고 좌 우는 auto를 적용하면 
+	화면 상단과 하단에 20픽셀의 여유를 갖고 사이트는 중앙 정렬됩니다. */
+}
+header {
+	height:130px;  /* 헤더 부분 전체 높이 설정 */
+	text-transform:uppercase; /* header이 있는 영문 글꼴들은 전부 대문자로 */
+}
+
+header h1 { /* 사이트 제목이 설정하는 부분 */
+	background-image: url(../images/logo.png); /*로고를 배경으로 처리 */
+	background-repeat: no-repeat;
+	background-position: left top;
+	float:left; /* 왼쪽으로 float */
+	margin: 0 0 0 35px; /* 왼쪽으로 35픽셀 정도의 마진을 줌 */
+}
+header h1 span {
+	display:block; /* div로 감쌀 경우 display block은 필요없음  */
+	text-indent:-9999px; /* 텍스트는 감춤 */
+	height:80px; /* 로고의 높이와 길이 설정 */
+	width:220px;
+}
+header nav { float:right; font-size:19px; margin:66px 0 0 0; font-family: 'Colaborate'; }
+header nav a { color:#FFF; text-decoration:none}
+header nav ul { list-style:none}
+header nav li {
+	float: left;
+	padding: 0 19px;
+    background-image: url(../images/divide.png);
+	background-repeat: no-repeat;
+	background-position: right top;
+}
+ header nav li:last-child{ background:none} 
+
+
+form * {vertical-align:middle;} 
+form#searchform {
+	position:relative;
+	float:right;
+	top:10px;
+	right:15px;	
+	margin:0 ;
+	padding:0;	
+}
+
+form#searchform input.in_box {
+	padding:5px;
+	width:150px;
+	border:1px solid #F90;
+}
+form#searchform input.in_box:focus {
+	width:200px;
+	border:1px solid #F00;
+	background-color:#FFC;
+
+}
+form#searchform input.smt_btn {
+	padding:6px;
+	width:62px;
+	border:1px solid #333;
+	color:#FFF;
+	background:url(../images/btn_back.gif) repeat left bottom;		
+}
+
+#main-content {background-color:#FFF; min-height:500px;}
+/* 메인 컨텐츠 부분 배경색 지정 및 최소 높이 지정 */
+#slider {margin-left:1px;} /* 슬라이더 들어가는 부분 좌마진 1픽셀 적용  이렇게 해야 배경색 1픽셀이 보이게 됨, 이 부분 삭제 후 결과도 한번 확인해 보세요. */
+#news, #blog_post {float:left;margin:30px 5px 0 10px;width:270px}  /* 뉴스와 블로그 들어가는 박스 모델 부분 정렬, 두 부분 동일하게 float 왼쪽으로, 마진값 지정하고, 길이는 동일하게 270픽셀로 설정 */
+#news h2, #blog_post h2 { /* 뉴스와 블로그 포스트 제목 들어가는 곳 설정 */
+	font-size: 16px;
+	height:40px;
+	padding-left:8px;
+	background-image: url(../images/h2_under.png);
+	background-repeat: no-repeat;
+	background-position: left 25px;
+}
+#blog_post h3 { color:#930; font-size:14px} /* 블로그의 제목 처리 */
+#news li { background:url(../images/li_bullet.png) no-repeat left center; padding-left:10px; line-height:1.6em;}
+/* 뉴스 부분에 들어간 부분 bullet 처리 */
+#customer {float:right; width:330px;margin:30px 0 0 0;} /* 고객센터 배너 들어가는 부분 정렬 */
+#news ul, #blog_post ul {list-style:none; margin-left:5px} 
+#customer ul { list-style:none}
+#customer li {float:left}
+#customer li a {display:block; padding:0 10px; margin-top:12px}

@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>position 속성 </title>
+<style type="text/css">
+#wrap1, #wrap2 {
+	margin:10px auto;
+	border:2px dotted #FF0000;
+	padding:20px;
+	width:300px;
+
+}
+#box1,#box2, #box3, #box4, #box5, #box11,#box21, #box31, #box41, #box51 { 
+	width:100px; 
+	height:50px; 
+	border:1px solid #333; 
+	margin:10px; 
+	padding:10px; 
+	background: rgba(204,204,204,0.5) }
+	
+	
+ #box11,#box21, #box31, #box41, #box51  {
+	 background:rgba(255,204,0,0.5);
+	 top:100px;
+	 left:100px;
+ }
+#box1 {
+	position:static;
+}
+
+#box2 {
+	position: absolute;
+
+}
+#box3 {
+	position: fixed;
+	
+}
+#box4 {
+	position: relative;	
+
+}
+#box5 {
+	position: inherit;
+
+}
+#
+#box11 {
+	position:static;
+}
+
+#box21 {
+	position: absolute;
+
+}
+#box31 {
+	position: fixed;
+	
+}
+#box41 {
+	position: relative;		
+
+}
+#box51 {
+	position: inherit;
+
+}
+
+</style>
+</head>
+
+<body>
+<div id="wrap1">
+    <div id="box1">
+        position:static;	
+    </div>
+    <div id="box2">
+        position: absolute;
+    </div>
+    <div id="box3">
+        position: fixed;
+    </div>
+    <div id="box4">
+        position: relative;
+    </div>
+    <div id="box5">
+        position: inherit;
+    </div>
+</div>
+
+<div id="wrap2">
+    <div id="box11">
+        position:static2;	
+    </div>
+    <div id="box21">
+        position: absolute2;
+    </div>
+    <div id="box31">
+        position: fixed2;
+    </div>
+    <div id="box41">
+        position: relative2;
+    </div>
+    <div id="box51">
+        position: inherit2;
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>마우스 롤오버 효과</title>
+<style>
+	body { font-size:24px; font-family:"맑은 고딕", "Malgun Gothic", "돋움", Dotum, AppleGothic, sans-serif; text-transform:uppercase;}
+	a { text-decoration:none; color:inherit}
+	a:hover { color:#F90;}
+	h1 {font-size:1em; margin:5px 0 20px 0; padding:0}
+	nav { border:1px solid #333; height:30px; width:600px; padding:10px;}
+	nav ul {list-style:none; margin:0; padding-top:3px;}
+	nav li { float:left; text-indent:-9999px;}
+	nav li a { display:block; padding:0 20px;  width:94px; height:24px;}
+	nav li.m1, nav li.m2, nav li.m3, nav li.m4 { background-image:url(menu.png); background-repeat: no-repeat;}
+	nav li.m1 {background-position:15px 0;}
+	nav li.m2 {background-position:-135px 0;}
+	nav li.m3 {background-position:-280px 0;}
+	nav li.m4 {background-position:-425px 0;} 
+	nav li.m1:hover {background-position:15px -40px;}
+	nav li.m2:hover {background-position:-135px -40px;}
+	nav li.m3:hover {background-position:-280px -40px;}
+	nav li.m4:hover {background-position:-425px -40px;} 
+	
+
+</style>
+</head>
+
+<body>
+<h1>마우스 오버 효과 | 하나의 이미지</h1>
+<nav>
+    <ul>
+      <li class="m1"><a href="#">menu1</a></li>
+      <li class="m2"><a href="#">menu2</a></li>
+      <li class="m3"><a href="#">menu3</a></li>
+      <li class="m4"><a href="#">menu4</a></li>        
+    </ul>
+</nav>
+
+</body>
+</html>

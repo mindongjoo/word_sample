@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>텍스트 속성 적용하기</title>
+<style type="text/css">
+
+@font-face { font-family:'JejuHallasan';  
+src:url(webfont/JejuHallasan.eot);
+src:local('☺'), url(webfont/JejuHallasan.woff) format("woff") , url(webfont/JejuHallasan.ttf) format("truetype");
+}
+
+body {
+	font-family: "돋움", Dotum, AppleGothic, sans-serif;
+	color: #333;	
+}
+
+h1 {
+	font-family:JejuHallasan;
+}
+
+#box1 {
+		
+}
+#box2 {
+	line-height:0.75em;
+	font-size:0.75em;		
+}
+
+#box3 {
+	line-height:12px;
+	font-size:12px;		
+}
+#box4 {
+	line-height:1.2em;
+	font-size:0.8em;		
+}
+#box4 {
+	line-height:1.5em;
+	font-size:1em;		
+}
+</style>
+</head>
+
+<body>
+
+<div id="box1">
+	<h1>텍스트 속성 알아보기 BOX1 </h1>
+    <p>텍스트 속성에 대해서 알아보고 있습니다. <br>
+        body에서 폰트 크기를 정하지 않을 경우 기본 폰트의 크기는 16px이 됩니다. <br>
+        box1에서는 브라우저 기본 폰트 크기와 line-height 가 지정되어 있는 상태 입니다. 
+    </p>
+</div>
+
+<div id="box2">
+	<h1>텍스트 속성 알아보기 BOX2 </h1>
+    <p>텍스트 속성에 대해서 알아보고 있습니다. <br>
+		box2에서는 	line-height:0.75em; font-size:0.75em;의 속성이 적용되었습니다.<br>
+        따라서 h1의 크기도 box1에 비해서 작습니다. <br>
+    </p>
+
+</div>
+
+<div id="box3">
+	<h1>텍스트 속성 알아보기 BOX3 </h1>
+    <p>텍스트 속성에 대해서 알아보고 있습니다. <br>
+		box3에서는 	line-height:12px; font-size:12px;의 속성이 적용되었습니다.<br>
+        box2와 Box3의 폰트 크기는 동일합니다. <br>
+		px로 지정한 웹 페이지는 웹 브라우저에서 텍스트 크기를 키워도 폰트의 크기는 변하지 않습니다. <br>
+        하지만 em 으로 지정할 경우에는 폰트의 크기는 가변적입니다. <br>
+        또한 em으로 지정하게 되면 body에서 폰트 크기를 정하는 것에 비례하여 모든 선택자에 영향을 미치게 됩니다. 
+    </p>
+</div>
+
+<div id="box4">
+	<h1>텍스트 속성 알아보기 BOX4  </h1>
+     <p>텍스트 속성에 대해서 알아보고 있습니다. <br>
+		box4 에서는 line-height:1.2em;font-size:0.8em;을 적용했습니다.
+    </p>
+</div>
+
+<div id="box4">
+	<h1>텍스트 속성 알아보기 BOX5  </h1>
+     <p>텍스트 속성에 대해서 알아보고 있습니다. <br>
+		box4 에서는 line-height:1.5em;font-size:1em;을 적용했습니다.<br>
+		BOX1에 있는 텍스트 크기와 동일한 것을 알 수 있습니다.<br>
+		즉 웹 페이지에서 1em이 의미하는 것은 브라우저 기본 폰트 사이즈와 동일한 의미입니다.
+    </p>
+</div>
+
+<div id="box6">
+</div>
+
+</body>
+</html>

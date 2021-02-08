@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>@font-face 적용 예</title>
+<style type="text/css">
+
+@font-face { font-family:'JejuHallasan';  
+src:url(webfont/JejuHallasan.eot);
+src:local('☺'), url(webfont/JejuHallasan.woff) format("woff") , url(webfont/JejuHallasan.ttf) format("truetype");
+}
+
+body {
+	line-height: 1.8em;
+	font-family: "맑은 고딕", "Malgun Gothic", "돋움", Dotum, "AppleGothic", sans-serif;
+}
+
+h1 { 
+	font-family:'JejuHallasan';
+	color:rgba(255,0,0,1);
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>제주 한라산체를 제목으로 사용합니다.</h1>
+<p>제목에는 한라산체를 사용했으며, 본문체로는 맑은 고딕을 사용했습니다. <br>
+현재 문서는 맥에서 보더라도 PC에서와 거의 비슷한 결과를 얻을 수 있으며, 어떤 브라우저를 사용하던 동일한 결과를 나타냅니다.</p>
+
+</body>
+</html>

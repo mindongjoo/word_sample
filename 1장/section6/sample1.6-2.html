@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>word-wrap 속성</title>
+<style>
+#box1, #box2 {
+	width:150px;
+	padding:10px;
+	margin:10px;
+	border:1px solid #666;
+}
+#box1 {
+	word-wrap:normal;
+}
+#box2 {
+	word-wrap: break-word;
+}
+</style>
+</head>
+
+<body>
+<div id="box1">
+여기는 단어의 길이를 강제적으로 길게 만들어 보겠습니다.
+ThisisverylognwordwhichImadeonpurpose.
+<pre>
+#box1 {
+	word-wrap:normal;
+}
+</pre>
+</div>
+<div id="box2">
+여기는 단어의 길이를 강제적으로 길게 만들어 보겠습니다.
+ThisisverylognwordwhichImadeonpurpose.
+<pre>
+#box2 {
+	word-wrap: break-word;
+}
+</pre>
+</div>
+
+</body>
+</html>

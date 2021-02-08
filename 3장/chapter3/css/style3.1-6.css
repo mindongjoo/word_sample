@@ -1,0 +1,64 @@
+* { margin: 0; padding: 0; } /* CSS 박스 모델 reset */
+body {
+	font-family: "맑은 고딕", "Malgun Gothic", "돋움", Dotum, AppleGothic, sans-serif; /* 글꼴을 정의해 줍니다. */
+	font-size: 0.8em; /* 글꼴 크기 조절 */
+	line-height: 1.4em; /* 글 사이 간격조절 */
+	background-color: white; /* 배경 색상 지정  */
+	background-image: url(../images/background.jpg); /* 배경 이미지 지정  */
+	background-repeat: repeat-x; /* 배경 이미지 반복은 X 축으로만   */
+	background-position: top; /* 배경 이미지 위치는 상단에 위치   */
+}
+
+#page-wrap { 
+	width: 913px;  /* 사이트 전체 크기를 설정해 줍니다. */
+	margin: 20px auto; 
+	/* 상단과 하단 마진은 20픽셀 그리고 좌 우는 auto를 적용하면 
+	화면 상단과 하단에 20픽셀의 여유를 갖고 사이트는 중앙 정렬됩니다. */
+}
+header {
+	height:130px;  /* 헤더 부분 전체 높이 설정 */
+	text-transform:uppercase; /* header이 있는 영문 글꼴들은 전부 대문자로 */
+}
+
+header h1 { /* 사이트 제목이 설정하는 부분 */
+	background-image: url(../images/logo.png); /*로고를 배경으로 처리 */
+	background-repeat: no-repeat;
+	background-position: left top;
+	float:left; /* 왼쪽으로 float */
+	margin: 0 0 0 35px; /* 왼쪽으로 35픽셀 정도의 마진을 줌 */
+}
+header h1 span {
+	display:block; /* div로 감쌀 경우 display block은 필요없음  */
+	text-indent:-9999px; /* 텍스트는 감춤 */
+	height:80px; /* 로고의 높이와 길이 설정 */
+	width:220px;
+}
+
+
+header nav { 
+	float:right; /* 메뉴는 오른쪽으로 float */
+	font-size:19px;  /* 글꼴 크기는 19픽셀로 설정 */
+	margin:70px 0 0 0;  /* 상단으로 70픽셀의 마진 설정 */
+}
+header nav a { 
+	color:#FFF; /* 메뉴 링크의 색상은 흰색으로 */
+	text-decoration:none /* 밑줄 제거 */
+}
+header nav ul { 
+	list-style:none /* 리스트 스타일은 없음 */
+}
+header nav li {
+	float: left; /* 여기서 float 왼쪽으로 주면 상하로 정렬되는 메뉴가 좌우로 펼쳐짐 */
+	padding: 0 19px; /* 패딩을 이용하여 내부 여백 설정하기 */
+}
+
+form#searchform {
+	position:relative; /* posistion 설정 적용 */
+	float:right; /* 위치 정렬을 위해 오른쪽으로 float */
+	top:10px; /* 상단 10픽셀 여백 */
+	right:15px;	/*  오른쪽으로는 15픽셀 */
+	margin:0 ; /* 마진과 패딩은 0으로 */
+	padding:0;	
+}
+
+

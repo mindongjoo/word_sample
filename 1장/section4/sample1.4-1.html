@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>background 속성 </title>
+<style type="text/css">
+.back {
+	width:100%;
+	margin:0 auto;
+	padding:0;
+	border:1px solid rgba(51,51,51,1);
+	background:url(back1.jpg) top repeat-x;	
+	float:left;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:1em;
+	text-align:center;
+
+}
+
+.box1,  .box2, .box3, .box4, .box5, .box6 {
+	padding:30px;
+	margin:30px;
+	border:5px solid #000;
+	background:url(back2.jpg) repeat-x top;
+}
+
+.box5, .box6 {
+	border-style:dotted;
+
+}
+
+.box1 {
+	background-origin: padding-box;
+}
+.box2 {
+	background-origin: border-box;
+}
+.box3 {
+	background-origin: content-box;
+}
+.box4 {
+	background-size:70px auto;
+}
+.box5 {
+	background-clip:border-box;
+}
+.box6 {
+	background-clip:padding-box;
+}
+
+
+</style>
+</head>
+
+<body>
+<div class="back">
+
+	<div class="box1">
+    	background-origin: padding-box;
+    </div>
+	<div class="box2">
+    	background-origin: border-box; 
+    </div>
+	<div class="box3">
+    	background-origin: content-box;
+    </div>        
+
+	<div class="box4">
+    	background-size:50px auto;
+    </div>  
+	<div class="box5">
+    	background-clip:border-box;
+    </div>
+	<div class="box6">
+    	background-clip:padding-box;
+    </div>
+ 
+</div>
+
+</body>
+</html>
